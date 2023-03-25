@@ -11,31 +11,34 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <title>Starbucks | Page</title>
 </head>
 
 <body>
 
     <header class="header">
-        <a href="#" class="logo">
-            <img src="./img/logo.png" alt="logo-starbucks">
-        </a>
+        <div class="navbar">
+            <a href="#" class="logo">
+                <img src="./img/logo.png" alt="logo-starbucks">
+            </a>
+            <a href="#menu">MENU</a>
+            <a href="#">REWARDS</a>
+            <a href="#">NOSSO CAFÉ</a>
+            <a href="#">IMPACTO SOCIAL</a>
+        </div>
+        <div class="nav-menu">
+            <div class="navbar-right">
+                <img src="https://www.starbucks.com.br/public/img/icons/sb-historias-logo.svg" alt="">
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Encontre uma loja</a>
+                <a href="#"><button>Entrar</button></a>
+                <a href="#"><button class="btn">Participe agora</button></a>
+            </div>
+        </div>
     </header>
 
-    <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#menu">Menus</a>
-        <a href="#produtos">Produtos</a>
-        <a href="#review">Review</a>
-        <a href="#lojas">Lojas</a>
-    </nav>
-
-    <div class="icons">
-        <div class="fas fa-search" id="search-btn"></div>
-        <div class="fas fa-shopping-cart" id="cart-btn"></div>
-        <div class="fas fa-bars" id="menu-btn"></div>
-    </div>
 
     <div class="carousel" data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false }'>
         <div class="carousel-cell">
@@ -53,7 +56,12 @@
         <div class="carousel-cell">
             <img src="./img/banner5.jpg" alt="">
         </div>
-      </div>
+    </div>
+
+    <div class="container">
+        <p>Conforme abrimos nossas lojas, permanecemos no compromisso com a saúde e bem-estar de nossos partners e consumidores.</p>
+        <a href="#"><button>Saiba mais</button></a>
+    </div>
 
     <script src="./js/script.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
