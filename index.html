@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
     <title>Starbucks | Page</title>
 </head>
 
@@ -35,8 +37,27 @@
         <div class="fas fa-bars" id="menu-btn"></div>
     </div>
 
+    <div class="carousel" data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false }'>
+        <div class="carousel-cell">
+            <img src="./img/banner1.jpg" alt="">
+        </div>
+        <div class="carousel-cell">
+            <img src="./img/banner2.jpg" alt="">
+        </div>
+        <div class="carousel-cell">
+            <img src="./img/banner3.jpg" alt="">
+        </div>
+        <div class="carousel-cell">
+            <img src="./img/banner4.jpg" alt="">
+        </div>
+        <div class="carousel-cell">
+            <img src="./img/banner5.jpg" alt="">
+        </div>
+      </div>
 
     <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="/path/to/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
